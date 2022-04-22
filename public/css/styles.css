@@ -1,0 +1,352 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259C3;
+    --Gris-Oscuro: #666;
+    --Gris-Claro: #EBEBEB;
+    --Verde: #39B54A;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.head {
+    display: flex;
+    flex-wrap: wrap;
+    padding:5px;
+}
+
+.logo,
+.form {
+    width: 50%;
+    padding: 10px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 8px;
+}
+
+header .form .input {
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 20%;
+    color: #666;
+    width: 10%;
+    text-align: center;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+.cuotasHead {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav {
+    font-size: 12px;
+    display: flex;
+    width: 90%;
+    display: none;
+    padding: 10px;
+}
+
+header nav li {
+    list-style-type: none;
+    color: #000;
+}
+
+.burger-menu {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.burger-menu i {
+    background-color: #1259C3;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+}
+
+.ultima.visita,
+.ofertas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i {
+    display: block;
+    font-size: 12px;
+    background-color: #fff;
+    border: solid 1px;
+    color: #39B54A;
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px; right: 20px;
+}
+
+p {
+    font-size: 12px;
+}
+
+main section h2 {
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+article div.pie-articulo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+.precios {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39B54A;
+    width: 70%;
+}
+
+.descripcion {
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    color: #1259C3;
+}
+
+.copyright {
+    text-align: left;
+    margin: 15px 0px 10px 10px;
+    width: 100%;
+}
+
+@media (min-width: 361px) {
+    .form {
+        font-size: 12px;
+    }
+    nav {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+    main section article .descripcion {
+        display: block;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section div.articulos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section div.articulos article {
+        width: 45%;
+    }
+    .precios,
+    .descuentos {
+        width: 50%;
+    }
+    .footer {
+        display: flex;
+    }
+    .pago,
+    .envio,
+    .seguridad {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .form {
+        font-size: 20px;
+    }
+    header nav,
+    header nav #menu,
+    header nav #perfil {
+        display: flex;
+    }
+    header nav {
+        justify-content: space-between;
+        width: 100%;
+    }
+    header nav ul li {
+        padding: 10px;
+    }
+    main section div.articulos article {
+        width: 22%;
+    }
+    .precios,
+    .descuentos,
+    .descripcion {
+        font-size: 80%;
+    }
+    main section article i {
+        font-size: 70%;
+    }
+}
+
+
+#login {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login input {
+    width: 100%;
+    padding: 6px;
+    margin: 5px;
+}
+
+#login button {
+    background-color: #1259C3;
+    padding: 5px;
+    color: #fff;
+}
+
+label {
+    font-size: 10px;
+}
+
+input {
+    align-items: baseline;
+}
+
+.perfil,
+.intereses {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.perfil input,
+.intereses input {
+    width: 100%;
+}
+
+.perfil div,
+.intereses div {
+    margin: 6px;
+}
+
+#register {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#register h6 {
+    width: 100%;
+    padding: 10px;
+}
+
+#register p {
+    padding: 0px;
+}
+
+#register span {
+    font-size: 10px;
+    display: none;
+}
+
+#register input {
+    width: 100%;
+    margin: 5px;
+}
+
+#register button {
+    width: 15%;
+    align-items: center;
+    background-color: #1259C3;
+    color: #fff;
+    margin: 5px;
+}
