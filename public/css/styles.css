@@ -109,7 +109,7 @@ nav {
 
 .banner {
     width: 100%;
-    margin-top: 183px;;
+    margin-top: 148px;;
     display: flex;   
 }
 
@@ -234,6 +234,9 @@ footer {
     }
     .burger-menu {
         display: none;
+    }
+    .banner {
+        margin-top: 209px;
     }
     main section div.articulos {
         display: flex;
