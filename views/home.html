@@ -21,15 +21,17 @@
                 <div class="logo">
                     <img src="/images/logo-mercado-liebre.svg" alt="logo">
                 </div>
-                <div class="search" action="#" method="GET">
-                    <div class="input">Buscar productos y marcas</div>
-                    <div class="submit"><i class="fas fa-search"></i></div>
+                <div class="search">
+                    <form action="/" method="POST">
+                        <input type="search" name="busqueda" placeholder="Producto, marca...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
                 </div>
+                <p class="cuotasHead">
+                    <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+                    de crédito
+                </p>
             </div>
-            <p class="cuotasHead">
-                <i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta
-                de credito
-            </p>
                 <nav>
                     <ul id="menu">
                         <a href="#offers"><li>Ofertas</li></a>
@@ -40,7 +42,7 @@
         ​
                     <ul id="perfil">
                         <a href="/register"
-                        ><li>Crea tu cuenta <i class="far fa-address-card"></i></li
+                        ><li>Creá tu cuenta <i class="far fa-address-card"></i></li
                         ></a>
                         <a href="/login"
                         ><li>Ingresá <i class="fas fa-sign-in-alt"></i></li
